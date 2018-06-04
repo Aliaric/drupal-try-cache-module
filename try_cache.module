@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains try_cache.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function try_cache_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the try_cache module.
+    case 'help.page.try_cache':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Another quick cache module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,5 @@
+name: 'Try cache'
+type: module
+description: 'Another quick cache module'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,16 @@
+try_cache.alternative_cache_form:
+  path: '/try-cache/form/cache'
+  defaults:
+    _form: '\Drupal\try_cache\Form\AlternativeCache'
+    _title: 'AlternativeCache'
+  requirements:
+    _access: 'TRUE'
+  
+try_cache.alternative_cache_form_clear:
+  path: '/try-cache/{cache_id}/clear'
+  defaults:
+    _form: '\Drupal\try_cache\Form\CacheClearForm'
+    _title: 'Confirm Cache Clear'
+  requirements:
+    _access: 'TRUE'
+    cache_id: ^([a-zA-Z]+(?:_[a-zA-Z]+)*)$
